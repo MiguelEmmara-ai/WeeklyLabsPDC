@@ -1,0 +1,8 @@
+Andy 60
+Bob 87
+Alice 59
+Miguel 100
+Jacob 100
+Amos 100
+Clear 100
+David 80
