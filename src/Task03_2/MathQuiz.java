@@ -1,29 +1,48 @@
 package Task03_2;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MathQuiz {
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int userScore = 0;
-        boolean stop = false;
+        int counter = 0;
+        boolean stop = true;
         System.out.println("Math Quiz");
         System.out.println("=========");
 
-        System.out.print("\n\nWhat Is Your Name: ");
+        System.out.print("\nWhat Is Your Name: ");
         String userName = scanner.nextLine();
         User user = new User(userName,userScore);
 
         System.out.println();
         user.getData();
-
         System.out.println();
-        while (!stop) {
-            stop = user.startQuiz(scanner);
-        }
 
-        System.out.println("\nMath Quiz Finished!\n");
-        user.getData();
+        do {
+            if (counter <= 0) {
+                System.out.print("Start Math Quiz? (y/x): ");
+            } else {
+                System.out.print("Continue Math Quiz? (y/x): ");
+            }
+            String answer = scanner.nextLine();
 
+            try {
+                if (answer.equalsIgnoreCase("y")) {
+                    System.out.println();
+                    user.startQuiz();
+                    counter++;
+                } else if (answer.equalsIgnoreCase("x")) {
+                    System.out.println("\nMath Quiz Finished!\n");
+                    user.getData();
+                    stop = false;
+                } else {
+                    System.out.println("\nWrong answer, Please Type (y/x)!");
+                }
+            } catch (InputMismatchException | IllegalArgumentException e) {
+                System.out.println("Wrong answer, Please Type (y/x):");
+            }
+        } while (stop);
     }
 }
