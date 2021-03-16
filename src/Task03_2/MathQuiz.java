@@ -10,7 +10,7 @@ public class MathQuiz {
         System.out.println("Math Quiz");
         System.out.println("=========");
 
-        System.out.print("\n\nPlease Input Your Name: ");
+        System.out.print("\n\nWhat Is Your Name: ");
         String userName = scanner.nextLine();
         User user = new User(userName,userScore);
 
