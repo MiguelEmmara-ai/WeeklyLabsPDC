@@ -3,6 +3,15 @@ package Task03_2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * <h1>MathQuiz</h1>
+ * Randomly generate a math
+ * Question, and check whether the user can provide the correct answer.
+ *
+ * @author  Miguel Emmara - 18022146
+ * @since   17/03/2021
+ */
+
 public class MathQuiz {
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {

@@ -5,6 +5,14 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * <h1>User Class</h1>
+ * Randomly generate a math
+ * Question, and check whether the user can provide the correct answer.
+ *
+ * @author  Miguel Emmara - 18022146
+ * @since   17/03/2021
+ */
 public class User {
     private static final Scanner scanner = new Scanner(System.in);
     private String userName;
@@ -61,7 +69,8 @@ public class User {
                 break;
             case 3:
                 randomOperator = "/";
-                System.out.println(decimalFormat.format(number1Float) + " " + randomOperator + " " +  decimalFormat.format(number2Float));
+                System.out.println(decimalFormat.format(number1Float) + " " + randomOperator + " "
+                        +  decimalFormat.format(number2Float));
                 correctAnswer = (float) (Math.round((number1Float / number2Float) * 100.0) / 100.0);
                 System.out.println("In 2 Decimal Place");
                 break;
@@ -71,7 +80,7 @@ public class User {
 
         while (validation) {
             try {
-                // TO Display The Answer
+                // To Display The Answer
                 //System.out.println("Answer Is: " + correctAnswer);
                 System.out.print("Answer: ");
                 userAnswer = scanner.nextLine();
@@ -84,8 +93,15 @@ public class User {
                     this.userScore += 10;
                     validation = false;
                 } else {
-                    System.out.println("\nWrong Answer!");
-                    validation = true;
+                    if (this.getUserScore() <= 0) {
+                        System.out.println("\nWrong Answer!");
+                        validation = true;
+                    } else {
+                        System.out.println("\nWrong Answer!");
+                        System.out.println("-10 Points\n");
+                        this.userScore -= 10;
+                        validation = true;
+                    }
                 }
 
             } catch (InputMismatchException | NumberFormatException e) {
