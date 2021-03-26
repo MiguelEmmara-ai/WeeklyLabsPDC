@@ -6,5 +6,5 @@ teddy 40
 sam 50
 mark -30
 Miguel 240
-Amos 60
+Amos 140
 Jada 100

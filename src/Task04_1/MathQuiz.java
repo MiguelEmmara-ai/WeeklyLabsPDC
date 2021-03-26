@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Question, and check whether the user can provide the correct answer.
  *
  * @author  Miguel Emmara - 18022146
- * @since   17/03/2021
+ * @since   26/03/2021
  */
 
 public class MathQuiz {
@@ -59,7 +59,7 @@ public class MathQuiz {
             if (counter <= 0) {
                 System.out.print("Start Math Quiz? (y/x): ");
             } else {
-                System.out.print("Continue Math Quiz? (y/x): ");
+                System.out.print("Start another Math Quiz? (y/x): ");
             }
             String answer = scanner.nextLine();
 

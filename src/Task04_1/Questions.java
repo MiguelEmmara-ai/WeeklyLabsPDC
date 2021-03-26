@@ -21,7 +21,6 @@ public class Questions {
     private int userScore;
     private final Random random;
     private DecimalFormat decimalFormat;
-    private final int n = 5;
     private final ArrayList < String > numberOfQuestions = new ArrayList < > ();
 
     public Questions(String userName, int userScore) {
@@ -77,11 +76,8 @@ public class Questions {
     }
 
     public void startQuiz() {
-        float correctAnswer = 0;
-        String userAnswer;
+        ArrayList<Float> correctAnswer = new ArrayList<Float>();
         String randomOperator;
-        boolean validation = true;
-        String questions;
         int range = 100;
 
         for (int i = 0; i < 10; i++) {
@@ -93,30 +89,25 @@ public class Questions {
             switch (operator) {
                 case 0:
                     randomOperator = "+";
-                    numberOfQuestions.add(getNumber1() + " " + randomOperator + " " + +getNumber2());
-                    //System.out.println(number1 + " " + randomOperator + " " + +number2);
-                    correctAnswer = getNumber1() + getNumber2();
+                    numberOfQuestions.add(getNumber1() + " " + randomOperator + " " + getNumber2());
+                    correctAnswer.add((float) (getNumber1() + getNumber2()));
                     break;
                 case 1:
                     randomOperator = "-";
-                    numberOfQuestions.add(getNumber1() + " " + randomOperator + " " + +getNumber2());
-                    //System.out.println(number1 + " " + randomOperator + " " + +number2);
-                    correctAnswer = getNumber1() + getNumber2();
+                    numberOfQuestions.add(getNumber1() + " " + randomOperator + " " + getNumber2());
+                    correctAnswer.add((float) (getNumber1() - getNumber2()));
                     break;
                 case 2:
                     randomOperator = "*";
-                    numberOfQuestions.add(getNumber1() + " " + randomOperator + " " + +getNumber2());
-                    //System.out.println(number1 + " " + randomOperator + " " + +number2);
-                    correctAnswer = getNumber1() + getNumber2();
+                    numberOfQuestions.add(getNumber1() + " " + randomOperator + " " + getNumber2());
+                    correctAnswer.add((float) (getNumber1() * getNumber2()));
                     break;
                 case 3:
                     randomOperator = "/";
                     numberOfQuestions.add(decimalFormat.format(getNumber1Float()) + " " + randomOperator + " " +
                             decimalFormat.format(getNumber2Float()));
-    /*System.out.println(decimalFormat.format(number1Float) + " " + randomOperator + " " +
-            decimalFormat.format(number2Float));*/
-                    correctAnswer = (float)(Math.round((getNumber1Float() / getNumber2Float()) * 100.0) / 100.0);
-                    //System.out.println("In 2 Decimal Place");
+                    correctAnswer.add((float)(Math.round((getNumber1Float() / getNumber2Float()) * 100.0) / 100.0));
+                    System.out.println("In 2 Decimal Place");
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + operator);
@@ -126,7 +117,7 @@ public class Questions {
 
         for (int j = 0; j < 10; j++) {
             System.out.println(numberOfQuestions.get(j));
-            checkAnswer(correctAnswer, true);
+            checkAnswer(correctAnswer.get(j), true);
         }
 
     }
@@ -136,7 +127,7 @@ public class Questions {
         while (validation) {
             try {
                 // To Display The Answer
-                System.out.println("Answer Is: " + correctAnswer);
+                //System.out.println("Answer Is: " + correctAnswer);
                 System.out.print("Answer: ");
                 userAnswer = scanner.nextLine();
 
@@ -148,6 +139,7 @@ public class Questions {
                     this.userScore += 10;
                 } else {
                     System.out.println("\nWrong Answer!");
+                    System.out.println("Answer Is: " + correctAnswer);
                     System.out.println("-10 Points\n");
                     this.userScore -= 10;
 
