@@ -1,4 +1,4 @@
-package WeeklyTasks.Task09_2;
+package Task09_2;
 
 import javax.swing.JFrame;
 import java.awt.Panel;

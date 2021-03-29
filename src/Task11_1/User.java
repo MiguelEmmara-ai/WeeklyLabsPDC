@@ -1,4 +1,4 @@
-package WeeklyTasks.Task11_1;
+package Task11_1;
 
 public class User {
 

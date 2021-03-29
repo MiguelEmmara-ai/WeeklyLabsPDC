@@ -2,7 +2,7 @@
 /*
  * The programs are designed for PDC paper
  */
-package WeeklyTasks.Task01_1;
+package Task01_1;
 
 /**
  *

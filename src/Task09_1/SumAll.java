@@ -1,4 +1,4 @@
-package WeeklyTasks.Task09_1;
+package Task09_1;
 
 import java.util.Iterator;
 import java.util.Scanner;

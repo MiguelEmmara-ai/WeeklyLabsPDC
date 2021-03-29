@@ -1,4 +1,4 @@
-package WeeklyTasks.Task02_1;
+package Task02_1;
 
 /**
  * <h1>Task 2.1 DebugProgram</h1>

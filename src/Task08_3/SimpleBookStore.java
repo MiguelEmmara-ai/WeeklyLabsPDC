@@ -1,4 +1,4 @@
-package WeeklyTasks.Task08_3;
+package Task08_3;
 
 import java.sql.Connection;
 import java.sql.SQLException;

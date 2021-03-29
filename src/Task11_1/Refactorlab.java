@@ -1,4 +1,4 @@
-package WeeklyTasks.Task11_1;
+package Task11_1;
 
 import java.util.HashSet;
 import java.util.Scanner;

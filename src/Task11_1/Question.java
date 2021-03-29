@@ -1,5 +1,5 @@
 
-package WeeklyTasks.Task11_1;
+package Task11_1;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

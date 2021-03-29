@@ -1,4 +1,4 @@
-package WeeklyTasks.Task02_2;
+package Task02_2;
 
 import java.io.*;
 

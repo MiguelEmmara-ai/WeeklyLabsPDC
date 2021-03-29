@@ -1,4 +1,4 @@
-package WeeklyTasks.Task09_3;
+package Task09_3;
 
 public class QuizMain {
 

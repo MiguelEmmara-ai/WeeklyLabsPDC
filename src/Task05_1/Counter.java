@@ -1,4 +1,4 @@
-package WeeklyTasks.Task05_1;
+package Task05_1;
 
 public class Counter {
 

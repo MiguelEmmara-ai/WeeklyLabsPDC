@@ -1,4 +1,4 @@
-package WeeklyTasks.Task06_2;
+package Task06_2;
 
 import java.awt.Graphics;
 import java.awt.Image;

@@ -1,4 +1,4 @@
-package WeeklyTasks.Task09_3;
+package Task09_3;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

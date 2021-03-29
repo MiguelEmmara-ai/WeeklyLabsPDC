@@ -1,4 +1,4 @@
-package WeeklyTasks.Task06_1;
+package Task06_1;
 
 
 

@@ -1,4 +1,4 @@
-package WeeklyTasks.Task01_2;
+package Task01_2;
 
 /**
  * <h1>Circle Class</h1>

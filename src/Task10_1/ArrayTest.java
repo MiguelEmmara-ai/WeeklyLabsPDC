@@ -1,4 +1,4 @@
-package WeeklyTasks.Task10_1;
+package Task10_1;
 
 import java.util.Arrays;
 

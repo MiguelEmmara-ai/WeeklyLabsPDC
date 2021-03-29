@@ -1,4 +1,4 @@
-package WeeklyTasks.Task04_1_SOLUTION;
+package Task04_1_SOLUTION;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

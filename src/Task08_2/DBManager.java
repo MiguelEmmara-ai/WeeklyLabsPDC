@@ -1,7 +1,7 @@
 /*
  * The programs are designed for PDC paper
  */
-package WeeklyTasks.Task08_2;
+package Task08_2;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

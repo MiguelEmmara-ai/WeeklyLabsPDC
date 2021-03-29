@@ -1,13 +1,12 @@
-package Task04_1_SOLUTION;
+package Task04_1;
 
 public class User {
-
     private String username;
-    private int score = 0;
+    private int score;
 
-    public User(String un, int sc) {
-        this.score = sc;
-        this.username = un;
+    public User(String username, int score) {
+        this.username = username;
+        this.score = score;
     }
 
     public String getUsername() {
@@ -25,5 +24,4 @@ public class User {
     public void setScore(int score) {
         this.score = score;
     }
-
 }

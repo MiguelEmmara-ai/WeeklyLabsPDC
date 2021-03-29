@@ -1,4 +1,4 @@
-package WeeklyTasks.Task08_2;
+package Task08_2;
 
 public class BookStoreMain {
 

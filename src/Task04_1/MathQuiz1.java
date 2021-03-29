@@ -1,4 +1,4 @@
-package Task04_1_SOLUTION;
+package Task04_1;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -32,7 +32,7 @@ public class MathQuiz1 {
                     uAnswer = Double.parseDouble(line);
                     isValid = true;
                 } catch (NumberFormatException e) {
-                    System.out.println("Invalid inpit. Please input again.");
+                    System.out.println("Invalid input. Please input again.");
                 }
             }
             score += qm.checkAnswer(uAnswer, cAnswer);

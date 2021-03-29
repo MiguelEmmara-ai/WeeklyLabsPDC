@@ -1,4 +1,4 @@
-package WeeklyTasks.Task05_2;
+package Task05_2;
 
 public class Star {
 
