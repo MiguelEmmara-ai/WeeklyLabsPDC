@@ -105,9 +105,8 @@ public class Questions {
                 case 3:
                     randomOperator = "/";
                     numberOfQuestions.add(decimalFormat.format(getNumber1Float()) + " " + randomOperator + " " +
-                            decimalFormat.format(getNumber2Float()));
+                            decimalFormat.format(getNumber2Float()) + "\nIn 2 Decimal Place\n");
                     correctAnswer.add((float)(Math.round((getNumber1Float() / getNumber2Float()) * 100.0) / 100.0));
-                    System.out.println("In 2 Decimal Place");
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + operator);
@@ -127,7 +126,7 @@ public class Questions {
         while (validation) {
             try {
                 // To Display The Answer
-                //System.out.println("Answer Is: " + correctAnswer);
+                //System.out.println("\nAnswer Is: " + correctAnswer + "\n");
                 System.out.print("Answer: ");
                 userAnswer = scanner.nextLine();
 

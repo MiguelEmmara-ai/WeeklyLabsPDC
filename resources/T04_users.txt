@@ -1,12 +1,12 @@
 kevin 100
 bob 70
-Bob 10
+Bob 110
 leo 10
 alice 80
 teddy 40
-Miguel 10
+Miguel 360
 sam 50
 mark -30
-Miguel 240
-Amos 140
+Amos 60
 Jada 100
+Manusia 80
