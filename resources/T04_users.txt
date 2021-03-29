@@ -1,8 +1,10 @@
 kevin 100
 bob 70
+Bob 10
 leo 10
 alice 80
 teddy 40
+Miguel 10
 sam 50
 mark -30
 Miguel 240
